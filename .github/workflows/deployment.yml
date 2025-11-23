@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - main
-
-    pull_request:
+  pull_request:
     types: [opened, reopened, edited]
     branches:
       - main
+  issues:
+    types: [opened, closed]
   workflow_dispatch:
 
 jobs:
