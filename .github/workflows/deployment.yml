@@ -5,8 +5,8 @@ on:
     branches:
       - main
 
-  pull_request:
-    types: [opened]
+    pull_request:
+    types: [opened, reopened, edited]
     branches: [main]
 
   workflow_dispatch:
