@@ -22,8 +22,8 @@ jobs:
         run: npm test
 
   deploy:
-    runs-on: ubuntu-latest
     needs: test
+    runs-on: ubuntu-latest
     steps:
       - name: Récupération du dépôt
         uses: actions/checkout@v4
@@ -36,4 +36,4 @@ jobs:
       - name: Construction du projet
         run: npm run build
       - name: Déploiement
-        run: echo "Déploiement simulé terminé ..."
+        run: echo "Déploiement simulé terminé !"
