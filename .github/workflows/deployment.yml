@@ -21,8 +21,9 @@ jobs:
       - name: Exécution des tests
         run: npm test
 
-deploy:
+  deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Récupération du dépôt
         uses: actions/checkout@v4
